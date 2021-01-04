@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ChatApp_Ondoy"
+             mc:Ignorable="d"
+             x:Class="ChatApp_Ondoy.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomEntryStyle" TargetType="local:CustomEntry">
+                <Setter Property="Text" Value=""/>
+                <Setter Property="IsCurvedCornersEnabled" Value="True"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <AbsoluteLayout>
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" >
+            <Frame BackgroundColor="#1976d2" HeightRequest="315" CornerRadius="0">
+                <Image Source="ondoy" />
+            </Frame>
+            <StackLayout Padding="10,1,10,10">
+                <local:CustomEntry  x:Name="email" TextChanged="changetxt" Placeholder="Email" Keyboard="Email"  ReturnType="Next" Style="{StaticResource CustomEntryStyle}" />
+                <Grid>
+                    <local:CustomEntry  x:Name="passtxt" TextChanged="changetxt"  Placeholder="Password" IsPassword="True" Keyboard="Default" ReturnType="Done" Style="{StaticResource CustomEntryStyle}"/>
+                    <local:CustomButton x:Name="showpass" Clicked="showpassClick" Text="Show" WidthRequest="50" HeightRequest="5" CornerRadius="5" FontSize="Default" Margin="0,5,5,5" HorizontalOptions="End"/>
+                </Grid>
+
+                <Label Text="Forgot Password" HorizontalOptions="EndAndExpand" Margin="0,2,0,2"/>
+                <local:CustomButton x:Name="btnSignIn" Clicked="signin_click" Text="Sign in" HeightRequest="55" CornerRadius="8" BackgroundColor="LightGreen" Margin="0,3,0,3" />
+                <local:CustomButton Text="Create an account" HeightRequest="55" CornerRadius="8" Margin="0,3,0,3" Clicked="create_acc"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <BoxView Color="Black" HeightRequest="1.5" HorizontalOptions="Start" WidthRequest="1000" Grid.Row="0" Margin="0,10,0,10" Grid.Column="0"/>
+                    <Label Text="or" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" />
+                    <BoxView Color="Black" HeightRequest="1.5" WidthRequest="100" Grid.Row="0" Margin="0,10,0,10" Grid.Column="2" />
+
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame CornerRadius="7" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0">
+                        <Image Source="GoogleSignIn" Aspect="Fill" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="otherop" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame CornerRadius="7"  Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1">
+                        <Image Source="FacebookSignIn" Aspect="Fill"   VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="otherop" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+
+        </StackLayout>
+        <StackLayout
+            x:Name="newtab"
+            IsVisible="False"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            >
+            <ActivityIndicator
+                x:Name="newt"
+                IsRunning="False"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                
+                />
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

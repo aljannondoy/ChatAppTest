@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="gcm_defaultSenderId" translatable="false">116764929575</string>
+  <string name="google_app_id" translatable="false">1:116764929575:android:a9d99754632f40f1c76802</string>
+  <string name="default_web_client_id" translatable="false">116764929575-qoqfun0esj3fnsmk7rf8cfbflj6vfjcv.apps.googleusercontent.com</string>
+  <string name="google_api_key" translatable="false">AIzaSyBH9iDu9pFJDvtqsjq5tWk1EaVOMvY15zA</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBH9iDu9pFJDvtqsjq5tWk1EaVOMvY15zA</string>
+  <string name="google_storage_bucket" translatable="false">chatapp-ondoy-77719.appspot.com</string>
+  <string name="project_id" translatable="false">chatapp-ondoy-77719</string>
+</resources>

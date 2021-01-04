@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChatApp_Ondoy.ProfilePage"
+             xmlns:local="clr-namespace:ChatApp_Ondoy">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="10">
+            <Frame CornerRadius="100" BackgroundColor="#1C86EE" HeightRequest="180" WidthRequest="180" Margin="70,60,70,10" Padding="7" IsClippedToBounds="True">
+                <Frame CornerRadius="90" BackgroundColor="#60affe" HeightRequest="180" WidthRequest="180" Padding="7" IsClippedToBounds="True">
+                    <Frame CornerRadius="90" BackgroundColor="#60affe" HeightRequest="180" WidthRequest="180" Padding="7" IsClippedToBounds="True">
+                        <Image Source="prof" Scale="1.4" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Frame>
+                </Frame>
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="EditIcon" HorizontalOptions="Center"/>
+                <Label Text="{Binding uname}" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            <Label Text="{Binding Email}" FontSize="Medium" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <local:CustomButton Text="Sign out" CornerRadius="8" Margin="8" Clicked="signout_click"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

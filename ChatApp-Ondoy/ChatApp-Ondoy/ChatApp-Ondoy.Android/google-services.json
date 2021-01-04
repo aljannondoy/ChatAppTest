@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "116764929575",
+    "project_id": "chatapp-ondoy-77719",
+    "storage_bucket": "chatapp-ondoy-77719.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116764929575:android:a9d99754632f40f1c76802",
+        "android_client_info": {
+          "package_name": "com.companyname.chatapp_ondoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116764929575-qoqfun0esj3fnsmk7rf8cfbflj6vfjcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH9iDu9pFJDvtqsjq5tWk1EaVOMvY15zA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116764929575-qoqfun0esj3fnsmk7rf8cfbflj6vfjcv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

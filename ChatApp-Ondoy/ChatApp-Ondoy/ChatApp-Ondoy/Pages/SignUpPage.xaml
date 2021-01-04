@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChatApp_Ondoy.SignUpPage"
+             xmlns:local="clr-namespace:ChatApp_Ondoy"
+             >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomEntryStyle" TargetType="local:CustomEntry">
+                <Setter Property="Text" Value=""/>
+                <Setter Property="IsCurvedCornersEnabled" Value="True"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="5"/>
+                <Setter Property="ReturnType" Value="Next"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <AbsoluteLayout>
+        <StackLayout Orientation="Vertical"  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" >
+            <Frame BackgroundColor="#1976d2" HeightRequest="260" CornerRadius="0">
+                <Image Source="ondoy" />
+            </Frame>
+            <StackLayout Padding="10,1,10,10">
+                <local:CustomEntry  x:Name="user" TextChanged="changetxt" Placeholder="Username" Keyboard="Default" Style="{StaticResource CustomEntryStyle}"/>
+                <local:CustomEntry  x:Name="email" TextChanged="changetxt" Placeholder="Email" Keyboard="Email" Style="{StaticResource CustomEntryStyle}"/>
+                <Grid>
+                    <local:CustomEntry  x:Name="pass" TextChanged="changetxt" Placeholder="Password" IsPassword="True" Keyboard="Default" Style="{StaticResource CustomEntryStyle}"/>
+                    <local:CustomButton x:Name="showpass" Clicked="showpassw"  Text="Show" WidthRequest="50" HeightRequest="5" CornerRadius="5" FontSize="Default" Margin="0,5,5,5" HorizontalOptions="End"/>
+                </Grid>
+                <Grid Margin="0,0,0,8">
+                    <local:CustomEntry  x:Name="pass2"  TextChanged="changetxt" Placeholder="Confirm Password" IsPassword="True" Keyboard="Default" ReturnType="Done" Style="{StaticResource CustomEntryStyle}"/>
+                    <local:CustomButton x:Name="showpass2" Clicked="showpassw"  Text="Show" WidthRequest="50" HeightRequest="5" CornerRadius="5" FontSize="Default" Margin="0,5,5,5" HorizontalOptions="End"/>
+                </Grid>
+                <local:CustomButton Clicked="signup_click" Text="Sign up" HeightRequest="50" CornerRadius="8" BackgroundColor="LightGreen" Margin="0,3,0,3"/>
+                <local:CustomButton Clicked="backsignin" Text="Sign in to your account" HeightRequest="50" CornerRadius="8" Margin="0,3,0,3"/>
+                <Grid Margin="0,9,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame CornerRadius="7" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HeightRequest="29">
+                        <Image Source="GoogleSignUp" Aspect="Fill" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="otherop"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame CornerRadius="7"  Padding="0" IsClippedToBounds="True" HeightRequest="29" Grid.Row="0" Grid.Column="1">
+                        <Image Source="FacebookSignUp" Aspect="Fill"   VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="otherop"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout
+            x:Name="newtab"
+            IsVisible="False"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            >
+            <ActivityIndicator
+                x:Name="newt"
+                IsRunning="False"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                
+                />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
