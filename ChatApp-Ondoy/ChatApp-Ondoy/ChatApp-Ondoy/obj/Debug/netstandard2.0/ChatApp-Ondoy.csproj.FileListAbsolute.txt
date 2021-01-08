@@ -15,19 +15,38 @@ C:\Users\Aljann Nino Ondoy\source\repos\New folder\ChatApp-Ondoy\ChatApp-Ondoy\C
 C:\Users\Aljann Nino Ondoy\source\repos\New folder\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
 C:\Users\Aljann Nino Ondoy\source\repos\New folder\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.pdb
 C:\Users\Aljann Nino Ondoy\source\repos\New folder\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.deps.json
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.dll
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.pdb
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.csprojAssemblyReference.cache
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ChatPage.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ProfilePage.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\SignUpPage.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\TabPage.xaml.g.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfoInputs.cache
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfo.cs
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.dll
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
-C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.pdb
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.deps.json
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.dll
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.pdb
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ChatPage.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ProfilePage.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\SignUpPage.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\TabPage.xaml.g.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfoInputs.cache
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfo.cs
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.dll
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
+C:\Users\rjoli\Desktop\ChatAppOndoy\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.pdb
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.deps.json
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.dll
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\ChatApp-Ondoy.pdb
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.csprojAssemblyReference.cache
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ChatPage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ProfilePage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\SignUpPage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\TabPage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfoInputs.cache
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.AssemblyInfo.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.dll
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.pdb
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\CustomViews\Loading.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\source\repos\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ResetPasswordPage.xaml.g.cs

@@ -6,16 +6,28 @@ namespace ChatApp_Ondoy
 {
     public partial class App : Application
     {
+        public static float screenWidth { get; set; }
+        public static float screenHeight { get; set; }
+        public static float appScale { get; set; }
+
+        DataClass dataClass = DataClass.GetInstance;
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            if (dataClass.isSignedIn)
+            {
+                Application.Current.MainPage = new TabPage();
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
         }
 
         protected override void OnStart()
         {
-            MainPage = new NavigationPage(new MainPage());
+          
         }
 
         protected override void OnSleep()

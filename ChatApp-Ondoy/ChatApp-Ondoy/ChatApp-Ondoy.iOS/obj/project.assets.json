@@ -11,11 +11,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.CloudFirestore/4.1.0": {
+      "Plugin.CloudFirestore/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Reactive": "5.0.0",
-          "Xamarin.Firebase.iOS.CloudFirestore": "1.19.0"
+          "System.Reactive": "4.3.2",
+          "Xamarin.Firebase.iOS.CloudFirestore": "1.12.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.CloudFirestore.dll": {}
@@ -33,11 +33,11 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Reactive/4.3.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/System.Reactive.dll": {}
@@ -56,7 +56,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
+      "System.Threading.Tasks.Extensions/4.5.3": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -87,11 +87,11 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.CloudFirestore/1.19.0": {
+      "Xamarin.Firebase.iOS.CloudFirestore/1.12.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -103,7 +103,7 @@
           "lib/xamarinios10/Firebase.CloudFirestore.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -249,8 +249,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Plugin.CloudFirestore": "4.1.0",
-          "Xamarin.Essentials": "1.6.0",
+          "Plugin.CloudFirestore": "3.1.0",
+          "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -271,11 +271,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.CloudFirestore/4.1.0": {
+      "Plugin.CloudFirestore/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Reactive": "5.0.0",
-          "Xamarin.Firebase.iOS.CloudFirestore": "1.19.0"
+          "System.Reactive": "4.3.2",
+          "Xamarin.Firebase.iOS.CloudFirestore": "1.12.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.CloudFirestore.dll": {}
@@ -293,11 +293,11 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Reactive/4.3.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/System.Reactive.dll": {}
@@ -316,7 +316,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
+      "System.Threading.Tasks.Extensions/4.5.3": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -347,11 +347,11 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.CloudFirestore/1.19.0": {
+      "Xamarin.Firebase.iOS.CloudFirestore/1.12.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -363,7 +363,7 @@
           "lib/xamarinios10/Firebase.CloudFirestore.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -509,8 +509,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Plugin.CloudFirestore": "4.1.0",
-          "Xamarin.Essentials": "1.6.0",
+          "Plugin.CloudFirestore": "3.1.0",
+          "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -531,11 +531,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.CloudFirestore/4.1.0": {
+      "Plugin.CloudFirestore/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Reactive": "5.0.0",
-          "Xamarin.Firebase.iOS.CloudFirestore": "1.19.0"
+          "System.Reactive": "4.3.2",
+          "Xamarin.Firebase.iOS.CloudFirestore": "1.12.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.CloudFirestore.dll": {}
@@ -553,11 +553,11 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Reactive/4.3.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/System.Reactive.dll": {}
@@ -576,7 +576,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
+      "System.Threading.Tasks.Extensions/4.5.3": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -607,11 +607,11 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.CloudFirestore/1.19.0": {
+      "Xamarin.Firebase.iOS.CloudFirestore/1.12.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -623,7 +623,7 @@
           "lib/xamarinios10/Firebase.CloudFirestore.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -769,8 +769,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Plugin.CloudFirestore": "4.1.0",
-          "Xamarin.Essentials": "1.6.0",
+          "Plugin.CloudFirestore": "3.1.0",
+          "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -791,11 +791,11 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.CloudFirestore/4.1.0": {
+      "Plugin.CloudFirestore/3.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Reactive": "5.0.0",
-          "Xamarin.Firebase.iOS.CloudFirestore": "1.19.0"
+          "System.Reactive": "4.3.2",
+          "Xamarin.Firebase.iOS.CloudFirestore": "1.12.0"
         },
         "compile": {
           "lib/xamarinios10/Plugin.CloudFirestore.dll": {}
@@ -813,11 +813,11 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Reactive/4.3.2": {
         "type": "package",
         "dependencies": {
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.4"
+          "System.Threading.Tasks.Extensions": "4.5.3"
         },
         "compile": {
           "lib/netstandard2.0/System.Reactive.dll": {}
@@ -836,7 +836,7 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
+      "System.Threading.Tasks.Extensions/4.5.3": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -867,11 +867,11 @@
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.CloudFirestore/1.19.0": {
+      "Xamarin.Firebase.iOS.CloudFirestore/1.12.0": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0",
-          "Xamarin.Firebase.iOS.Core": "6.10.4"
+          "Xamarin.Firebase.iOS.Core": "6.6.6"
         },
         "frameworkAssemblies": [
           "Xamarin.iOS"
@@ -883,7 +883,7 @@
           "lib/xamarinios10/Firebase.CloudFirestore.dll": {}
         }
       },
-      "Xamarin.Firebase.iOS.Core/6.10.4": {
+      "Xamarin.Firebase.iOS.Core/6.6.6": {
         "type": "package",
         "dependencies": {
           "Xamarin.Build.Download": "0.10.0"
@@ -1029,8 +1029,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "12.0.3",
-          "Plugin.CloudFirestore": "4.1.0",
-          "Xamarin.Essentials": "1.6.0",
+          "Plugin.CloudFirestore": "3.1.0",
+          "Xamarin.Essentials": "1.3.1",
           "Xamarin.Forms": "4.3.0.908675"
         },
         "compile": {
@@ -1074,22 +1074,22 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.CloudFirestore/4.1.0": {
-      "sha512": "OZm6aRxDGFjItnfvREk/WvZ0IDNE68bYqzfEK+aeOg7uuG3aiMcMR+vkG6CuLFFgi7C175Eh7jk4ckNfSwRsnA==",
+    "Plugin.CloudFirestore/3.1.0": {
+      "sha512": "ehqg1Iaxw5zAVQFFCRcTqQw/k7Si4ertnwBM3FIZH/rJRq+NGYPBSsyAuo7oyw9aqVM2f0soF/st9xgyjCl4rg==",
       "type": "package",
-      "path": "plugin.cloudfirestore/4.1.0",
+      "path": "plugin.cloudfirestore/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid10.0/Plugin.CloudFirestore.dll",
-        "lib/monoandroid10.0/Plugin.CloudFirestore.xml",
+        "build/monoandroid90/Plugin.CloudFirestore.targets",
+        "lib/monoandroid90/FirebaseFirestore.Binding.dll",
         "lib/monoandroid90/Plugin.CloudFirestore.dll",
         "lib/monoandroid90/Plugin.CloudFirestore.xml",
         "lib/netstandard2.0/Plugin.CloudFirestore.dll",
         "lib/netstandard2.0/Plugin.CloudFirestore.xml",
         "lib/xamarinios10/Plugin.CloudFirestore.dll",
         "lib/xamarinios10/Plugin.CloudFirestore.xml",
-        "plugin.cloudfirestore.4.1.0.nupkg.sha512",
+        "plugin.cloudfirestore.3.1.0.nupkg.sha512",
         "plugin.cloudfirestore.nuspec"
       ]
     },
@@ -1140,32 +1140,29 @@
         "version.txt"
       ]
     },
-    "System.Reactive/5.0.0": {
-      "sha512": "erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
+    "System.Reactive/4.3.2": {
+      "sha512": "WhGkScPWxw2pp7UwRW8M1OvYZ3WUDPC2wJ0aiuaB4KRD3bt4wLkgHgYnOUu87WRhsurvv5LN0E63iWOEza2o8g==",
       "type": "package",
-      "path": "system.reactive/5.0.0",
+      "path": "system.reactive/4.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/net5.0/_._",
-        "build/netcoreapp3.1/System.Reactive.dll",
-        "build/netcoreapp3.1/System.Reactive.targets",
-        "build/netcoreapp3.1/System.Reactive.xml",
-        "buildTransitive/net5.0/_._",
-        "buildTransitive/netcoreapp3.1/System.Reactive.targets",
-        "lib/net472/System.Reactive.dll",
-        "lib/net472/System.Reactive.xml",
-        "lib/net5.0-windows10.0.19041/System.Reactive.dll",
-        "lib/net5.0-windows10.0.19041/System.Reactive.xml",
-        "lib/net5.0/System.Reactive.dll",
-        "lib/net5.0/System.Reactive.xml",
-        "lib/netcoreapp3.1/_._",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
         "lib/netstandard2.0/System.Reactive.dll",
         "lib/netstandard2.0/System.Reactive.xml",
         "lib/uap10.0.16299/System.Reactive.dll",
         "lib/uap10.0.16299/System.Reactive.pri",
         "lib/uap10.0.16299/System.Reactive.xml",
-        "system.reactive.5.0.0.nupkg.sha512",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.3.2.nupkg.sha512",
         "system.reactive.nuspec"
       ]
     },
@@ -1230,10 +1227,10 @@
         "system.runtime.interopservices.windowsruntime.nuspec"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.4": {
-      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+    "System.Threading.Tasks.Extensions/4.5.3": {
+      "sha512": "+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
       "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.4",
+      "path": "system.threading.tasks.extensions/4.5.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1241,8 +1238,6 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Threading.Tasks.Extensions.dll",
-        "lib/net461/System.Threading.Tasks.Extensions.xml",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
         "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
@@ -1261,7 +1256,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.4.5.3.nupkg.sha512",
         "system.threading.tasks.extensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1341,10 +1336,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Firebase.iOS.CloudFirestore/1.19.0": {
-      "sha512": "kXHOgYUIoPChCXKGLaKeqznB7audrXsze7VAhcGDPAe50E3p/uzX23vFsQ+UEN9h29TACZpSEJ59TvmmHS7Dlg==",
+    "Xamarin.Firebase.iOS.CloudFirestore/1.12.0": {
+      "sha512": "Ulp318b0+rtaTx8Y+G4+zsLxxmyC2dBt8D7fT8d06wIXtMalLhqAkVcjezYa4kU9ICjI4lnkTv+U99Fa0XdGuA==",
       "type": "package",
-      "path": "xamarin.firebase.ios.cloudfirestore/1.19.0",
+      "path": "xamarin.firebase.ios.cloudfirestore/1.12.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1352,14 +1347,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "firebaseioscloudfirestore_128x128.png",
         "lib/xamarinios10/Firebase.CloudFirestore.dll",
-        "xamarin.firebase.ios.cloudfirestore.1.19.0.nupkg.sha512",
+        "xamarin.firebase.ios.cloudfirestore.1.12.0.nupkg.sha512",
         "xamarin.firebase.ios.cloudfirestore.nuspec"
       ]
     },
-    "Xamarin.Firebase.iOS.Core/6.10.4": {
-      "sha512": "b/cy0xmGUGlT/RxQt2mvlB9lL/tiNRcfsZsWH20lP7FI6H/xABAGAQU0MDKM84KTTOx8NN9CB95eY74NWKGQtw==",
+    "Xamarin.Firebase.iOS.Core/6.6.6": {
+      "sha512": "GM43jhKOjzs2AwTNxPA3OFW/UVAM7oBWfYn0m9c56oOAAlPdpO7LebWXkLNa/vcFv9gtfCBrVVl+QIk8miwTDw==",
       "type": "package",
-      "path": "xamarin.firebase.ios.core/6.10.4",
+      "path": "xamarin.firebase.ios.core/6.6.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1369,7 +1364,7 @@
         "buildTransitive/Xamarin.Firebase.iOS.Core.targets",
         "firebaseioscore_128x128.png",
         "lib/xamarinios10/Firebase.Core.dll",
-        "xamarin.firebase.ios.core.6.10.4.nupkg.sha512",
+        "xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
         "xamarin.firebase.ios.core.nuspec"
       ]
     },
@@ -1641,11 +1636,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
       "projectName": "ChatApp-Ondoy.iOS",
-      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
+      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
       "packagesPath": "C:\\Users\\Aljann Nino Ondoy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1666,8 +1661,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
-              "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
+            "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
+              "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
             }
           }
         }
@@ -1698,20 +1693,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Essentials from 1.6.0 to 1.3.1. Reference the package directly from the project to select a different version. \r\n ChatApp-Ondoy.iOS -> ChatApp-Ondoy -> Xamarin.Essentials (>= 1.6.0) \r\n ChatApp-Ondoy.iOS -> Xamarin.Essentials (>= 1.3.1)",
-      "libraryId": "Xamarin.Essentials",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

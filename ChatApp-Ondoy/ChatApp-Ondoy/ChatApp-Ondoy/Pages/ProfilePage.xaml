@@ -5,6 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ChatApp_Ondoy.ProfilePage"
+             Title="ProfilePage"
+             x:Name="profilePage"
              xmlns:local="clr-namespace:ChatApp_Ondoy">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Padding="10">
@@ -16,10 +18,9 @@
                 </Frame>
             </Frame>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image Source="EditIcon" HorizontalOptions="Center"/>
-                <Label Text="{Binding uname}" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+                <Label x:Name="NameLabel" BindingContext="{ x:Reference Name=profilePage }" Text="{Binding Name}" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
             </StackLayout>
-            <Label Text="{Binding Email}" FontSize="Medium" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label  x:Name="EmailLabel" BindingContext="{ x:Reference Name=profilePage }" Text="{Binding Email}" FontSize="Medium" HorizontalOptions="Center" FontAttributes="Bold"/>
             <local:CustomButton Text="Sign out" CornerRadius="8" Margin="8" Clicked="signout_click"/>
         </StackLayout>
     </ContentPage.Content>

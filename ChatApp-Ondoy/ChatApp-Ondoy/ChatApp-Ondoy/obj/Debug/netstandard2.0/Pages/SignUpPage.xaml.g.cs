@@ -35,10 +35,7 @@ namespace ChatApp_Ondoy {
         private global::ChatApp_Ondoy.CustomButton showpass2;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.StackLayout newtab;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ActivityIndicator newt;
+        private global::ChatApp_Ondoy.Loading loading;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -49,8 +46,7 @@ namespace ChatApp_Ondoy {
             showpass = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomButton>(this, "showpass");
             pass2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomEntry>(this, "pass2");
             showpass2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomButton>(this, "showpass2");
-            newtab = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "newtab");
-            newt = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ActivityIndicator>(this, "newt");
+            loading = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.Loading>(this, "loading");
         }
     }
 }

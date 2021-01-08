@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.CloudFirestore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +13,12 @@ namespace ChatApp_Ondoy
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 public partial class SignUpPage : ContentPage
 {
-        MainPage mainpage;
-        Account account = new Account();
+        DataClass dataClass = DataClass.GetInstance;
         public SignUpPage()
         {
             InitializeComponent();
         }
-        public SignUpPage(MainPage mpage)
-        {
-            mainpage = mpage;
-
-            InitializeComponent();
-        }
-
-
+        
         async private void signup_click(object sender, EventArgs e)
         {
 
@@ -33,23 +26,41 @@ public partial class SignUpPage : ContentPage
             {
                 if (pass.Text == pass2.Text)
                 {
-                    account = new Account(user.Text, email.Text, pass.Text);
-                    mainpage.getAccount(account);
-                    newt.IsRunning = true;
-                    newtab.BackgroundColor = Color.FromRgba(0, 0, 0, 0.50);
-                    newtab.IsVisible = true;
-                    await Task.Delay(1000);
-                    newtab.IsVisible = false;
-                    newt.IsRunning = false;
-                    await DisplayAlert("Success", "Sign up successful. Verification email sent", "OKAY");
-                    await Navigation.PopModalAsync();
+                    loading.IsVisible = true;
 
+                    FirebaseAuthResponseModel res = new FirebaseAuthResponseModel() { };
+                    res = await DependencyService.Get<iFirebaseAuth>().SignUpWithEmailPassword(user.Text, email.Text, pass.Text);
+
+                    if (res.Status == true)
+                    {
+                        try
+                        {
+                            await CrossCloudFirestore.Current
+                             .Instance
+                             .GetCollection("users")
+                             .GetDocument(dataClass.loggedInUser.uid)
+                             .SetDataAsync(dataClass.loggedInUser);
+
+                            await DisplayAlert("Success", res.Response, "Okay");
+                            await Navigation.PopModalAsync(true);
+                        }
+                        catch (Exception ex)
+                        {
+                            await DisplayAlert("Error", ex.Message, "Okay");
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", res.Response, "Okay");
+                    }
+                    loading.IsVisible = false;
                 }
                 else
                 {
                     
-                    await DisplayAlert("Error", "Password don't match", "Okay");
-                    pass2.Text = "";
+                    await DisplayAlert("Error", "Passwords don't match", "Okay");
+                    pass2.Text = string.Empty;
+                    pass2.Focus();
                 }
             }
             else

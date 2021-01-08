@@ -14,18 +14,14 @@ namespace ChatApp_Ondoy
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        Account accnt = new Account();
+        DataClass dataClass = DataClass.GetInstance;
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
-        public MainPage(Account acct)
-        {
-            accnt = acct;
-            InitializeComponent();
-
-        }
-        async private void signin_click(object sender, EventArgs e)
+        
+        private async void signin_click(object sender, EventArgs e)
         {
             if (email.Text == "" || passtxt.Text == "")
             {
@@ -40,44 +36,38 @@ namespace ChatApp_Ondoy
                 }
                 await DisplayAlert("Error", "Missing Fields", "Okay");
             }
-            else if (email.Text == accnt.Email && passtxt.Text == accnt.pass)
-            {
-                newt.IsRunning = true;
-                newtab.BackgroundColor = Color.FromRgba(0, 0, 0, 0.50);
-                newtab.IsVisible = true;
-                await Task.Delay(1000);
-                newtab.IsVisible = false;
-                newt.IsRunning = false;
-                Application.Current.Properties.Clear();
-                Application.Current.Properties.Add("email", accnt.Email);
-                Application.Current.Properties.Add("password", accnt.pass);
-                Application.Current.Properties.Add("username", accnt.uname);
-                await Application.Current.SavePropertiesAsync();
-                Application.Current.MainPage = new TabPage { BindingContext = accnt };
-            }
             else
             {
-                await DisplayAlert("Error", "Account doesn't exist", "Okay");
+                loading.IsVisible = true;
+                FirebaseAuthResponseModel res = new FirebaseAuthResponseModel() { };
+                res = await DependencyService.Get<iFirebaseAuth>().LoginWithEmailPassword(email.Text, passtxt.Text);
+
+                if (res.Status == true)
+                {
+                    Application.Current.MainPage = new TabPage();
+                    /*
+                    //Use this if you want the master detail page
+                    Application.Current.MainPage = new MainMasterDetailPage(); 
+                    */
+                }
+                else
+                {
+                    await DisplayAlert("Error", res.Response,"Okay");
+                }
+                loading.IsVisible = false;
             }
+          
         }
-        private void create_acc(object sender, EventArgs e)
+        private async void create_acc(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new SignUpPage(this));
+            await Navigation.PushModalAsync(new SignUpPage(), true);
         }
         async private void otherop(object sender, EventArgs e)
         {
-            newt.IsRunning = true;
-            newtab.BackgroundColor = Color.FromRgba(0, 0, 0, 0.50);
-            newtab.IsVisible = true;
-            await Task.Delay(1000);
-            newtab.IsVisible = false;
-            newt.IsRunning = false;
-            Application.Current.Properties.Clear();
-            Application.Current.Properties.Add("email", accnt.Email);
-            Application.Current.Properties.Add("password", accnt.pass);
-            Application.Current.Properties.Add("username", accnt.uname);
-            await Application.Current.SavePropertiesAsync();
-            Application.Current.MainPage = new TabPage { BindingContext = accnt };
+        
+            FirebaseAuthResponseModel res = new FirebaseAuthResponseModel() { };
+            res = await DependencyService.Get<iFirebaseAuth>().LoginWithEmailPassword(email.Text, passtxt.Text);
+            Application.Current.MainPage = new TabPage();
         }
         private void showpassClick(object sender, EventArgs e)
         {
@@ -94,15 +84,17 @@ namespace ChatApp_Ondoy
             }
             passtxt.CursorPosition = passtxt.MaxLength;
         }
+        private async void forgotPass(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new ResetPasswordPage(), true);
+        }
         private void changetxt(object sender, TextChangedEventArgs e)
         {
 
             var txt = (CustomEntry)sender;
             txt.BorderColor = Color.Black;
         }
-        public void getAccount(Account acc)
-        {
-            accnt = acc;
-        }
+       
     }
 }

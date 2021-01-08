@@ -4,8 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ChatApp_Ondoy.App">
+             x:Class="ChatApp_Ondoy.App"
+              xmlns:local="clr-namespace:ChatApp_Ondoy">
+        
     <Application.Resources>
+        <ResourceDictionary>
+            <local:ScaleXAML x:Key="scale"/>
+        </ResourceDictionary>
 
     </Application.Resources>
 </Application>

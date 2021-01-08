@@ -18,6 +18,7 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
+    <Grid  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
     <AbsoluteLayout>
         <StackLayout Orientation="Vertical"  AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" >
             <Frame BackgroundColor="#1976d2" HeightRequest="260" CornerRadius="0">
@@ -57,22 +58,12 @@
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="otherop"/>
                         </Frame.GestureRecognizers>
                     </Frame>
+                  
                 </Grid>
             </StackLayout>
         </StackLayout>
-        <StackLayout
-            x:Name="newtab"
-            IsVisible="False"
-            AbsoluteLayout.LayoutBounds="0,0,1,1"
-            AbsoluteLayout.LayoutFlags="All"
-            >
-            <ActivityIndicator
-                x:Name="newt"
-                IsRunning="False"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                
-                />
-        </StackLayout>
     </AbsoluteLayout>
+        <local:Loading Grid.Row="0" Grid.Column="0" x:Name="loading" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False"/>
+    </Grid>
 </ContentPage>

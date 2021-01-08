@@ -19,8 +19,18 @@ namespace ChatApp_Ondoy.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            base.OnCreate(savedInstanceState);
+            var density = Resources.DisplayMetrics.Density;
+            App.screenWidth = Resources.DisplayMetrics.WidthPixels / density;
+            App.screenHeight = Resources.DisplayMetrics.HeightPixels / density;
 
+            if (Xamarin.Forms.Device.Idiom == TargetIdiom.Phone)
+                App.screenHeight = (16 * App.screenWidth) / 9;
+
+            if (Xamarin.Forms.Device.Idiom == TargetIdiom.Tablet)
+                App.screenWidth = (9 * App.screenHeight) / 16;
+
+
+            base.OnCreate(savedInstanceState);
             FirebaseApp.InitializeApp(this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

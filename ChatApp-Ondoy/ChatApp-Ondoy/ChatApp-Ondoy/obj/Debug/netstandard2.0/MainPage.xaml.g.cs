@@ -26,13 +26,13 @@ namespace ChatApp_Ondoy {
         private global::ChatApp_Ondoy.CustomButton showpass;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::ChatApp_Ondoy.CustomButton forgot;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::ChatApp_Ondoy.CustomButton btnSignIn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.StackLayout newtab;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ActivityIndicator newt;
+        private global::ChatApp_Ondoy.Loading loading;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -40,9 +40,9 @@ namespace ChatApp_Ondoy {
             email = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomEntry>(this, "email");
             passtxt = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomEntry>(this, "passtxt");
             showpass = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomButton>(this, "showpass");
+            forgot = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomButton>(this, "forgot");
             btnSignIn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.CustomButton>(this, "btnSignIn");
-            newtab = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "newtab");
-            newt = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ActivityIndicator>(this, "newt");
+            loading = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::ChatApp_Ondoy.Loading>(this, "loading");
         }
     }
 }
