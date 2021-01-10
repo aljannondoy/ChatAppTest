@@ -9,6 +9,8 @@
         
     <Application.Resources>
         <ResourceDictionary>
+            <local:IsOwnerConverter x:Key="isOwnerConverter"/>
+            
             <local:ScaleXAML x:Key="scale"/>
         </ResourceDictionary>
 

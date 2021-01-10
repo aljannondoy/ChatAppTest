@@ -4,12 +4,130 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ChatApp_Ondoy.ChatPage">
+             x:Class="ChatApp_Ondoy.ChatPage"
+              xmlns:local="clr-namespace:ChatApp_Ondoy">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="CustomEntryStyle" TargetType="local:CustomEntry">
+                <Setter Property="Text" Value=""/>
+                <Setter Property="IsCurvedCornersEnabled" Value="True"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Chat Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Padding="10,5,10,10" x:Name="FStack">
+                <Grid x:Name="SearchEntry">
+                    <local:CustomEntry  x:Name="searchcon" TextChanged="changeText" HeightRequest="{Binding Converter={StaticResource scale}, ConverterParameter='height=38'}" Placeholder="Search user email" Keyboard="Default" ReturnType="Search" Completed="Search_Tapped" Style="{StaticResource CustomEntryStyle}"/>
+                    <local:CustomButton x:Name="clear" Clicked="Clear_Clicked"  Text="X" WidthRequest="{Binding Converter={StaticResource scale}, ConverterParameter='width=50'}" HeightRequest="{Binding Converter={StaticResource scale}, ConverterParameter='height=20'}" CornerRadius="5" FontSize="Default" Margin="{Binding Converter={StaticResource scale}, ConverterParameter='thickness=0,5,5,5'}" HorizontalOptions="End" IsVisible="False"/>
+                 
+                </Grid>
+                <Label x:Name="noCont" Text="You have no contacts as of the moment." Padding="10,1,10,10" Margin="0,250,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+
+                <AbsoluteLayout x:Name="CloseList" IsVisible="False">
+                   
+                    <ContentView AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" BackgroundColor="LightGray" >
+
+                        <Image Source="CloseIcon.png" />
+                        <ContentView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Close_Clicked" NumberOfTapsRequired="1"/>
+                        </ContentView.GestureRecognizers>
+                    </ContentView>
+                </AbsoluteLayout>
+                <ListView x:Name="resultList" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill"
+                      SeparatorVisibility="None" HasUnevenRows="true" Margin="5,5,5,0" IsVisible="False">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Frame Padding="0" CornerRadius="5" IsClippedToBounds="True" HasShadow="False" BorderColor="LightBlue" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" Margin="10,5,10,5">
+                                            <Frame.Triggers>
+                                                <DataTrigger TargetType="Frame" Binding="{Binding uid}" Value="True">
+                                                    <Setter Property="BorderColor" Value="LightGreen"/>
+                                                </DataTrigger>
+                                            </Frame.Triggers>
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="AddContact" NumberOfTapsRequired="1"/>
+                                        </Frame.GestureRecognizers>
+                                        <Grid RowSpacing="0">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="5*"/>
+                                                    <RowDefinition Height="5*"/>
+                                                </Grid.RowDefinitions>
+                                                <Label Text="{Binding name}" Margin="5,0,0,0" Grid.Row="0" Grid.Column="0"
+                                                   HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Start" VerticalTextAlignment="End" FontSize="Large">
+                                                    <Label.Triggers>
+                                                        <DataTrigger TargetType="Label" Binding="{Binding uid}" Value="True">
+                                                            <Setter Property="Text" Value="{Binding name}"/>
+                                                        </DataTrigger>
+                                                    </Label.Triggers>
+                                                </Label>
+                                                <Label Text="{Binding email}" Margin="5,0,0,0" Grid.Row="1" Grid.Column="0"
+                                                   HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" FontSize="Medium">
+                                                    <Label.Triggers>
+                                                        <DataTrigger TargetType="Label" Binding="{Binding uid}" Value="True">
+                                                            <Setter Property="Text" Value="{Binding email}"/>
+                                                        </DataTrigger>
+                                                    </Label.Triggers>
+                                              
+                                                </Label>
+                                            </Grid>
+                                        </Frame>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <ListView x:Name="contactsList" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" ItemTapped="ContactsList_Tapped"
+                      SeparatorVisibility="None" HasUnevenRows="true" Margin="5,5,5,0" IsVisible="False">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Frame Padding="0" CornerRadius="5" IsClippedToBounds="True" HasShadow="False" BorderColor="LightBlue" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" Margin="10,5,10,5">
+                                            <Frame.Triggers>
+                                                <DataTrigger TargetType="Frame" Binding="{Binding contactID, Converter={StaticResource isOwnerConverter}}" Value="True">
+                                                    <Setter Property="BorderColor" Value="LightGreen"/>
+                                                </DataTrigger>
+                                            </Frame.Triggers>
+                                            <Grid RowSpacing="0">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="5*"/>
+                                                    <RowDefinition Height="5*"/>
+                                                </Grid.RowDefinitions>
+                                                <Label Text="{Binding contactName[0]}" Margin="5,0,0,0" Grid.Row="0" Grid.Column="0"
+                                                   HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Start" VerticalTextAlignment="End" FontSize="Large">
+                                                    <Label.Triggers>
+                                                        <DataTrigger TargetType="Label" Binding="{Binding contactID, Converter={StaticResource isOwnerConverter}}" Value="True">
+                                                            <Setter Property="Text" Value="{Binding contactName[1]}"/>
+                                                        </DataTrigger>
+                                                    </Label.Triggers>
+                                                </Label>
+                                                <Label Text="{Binding contactEmail[0]}" Margin="5,0,0,0" Grid.Row="1" Grid.Column="0"
+                                                   HorizontalOptions="Fill" VerticalOptions="Fill" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" FontSize="Medium">
+                                                    <Label.Triggers>
+                                                        <DataTrigger TargetType="Label" Binding="{Binding contactID, Converter={StaticResource isOwnerConverter}}" Value="True">
+                                                            <Setter Property="Text" Value="{Binding contactEmail[1]}"/>
+                                                        </DataTrigger>
+                                                    </Label.Triggers>
+                                                </Label>
+                                            </Grid>
+                                        </Frame>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+                
+            
+            
+            <local:Loading Grid.Row="0" Grid.Column="0" x:Name="loading" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

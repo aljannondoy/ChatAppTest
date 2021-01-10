@@ -14,7 +14,7 @@ namespace ChatApp_Ondoy
             set => SetValue(BorderColorProperty, value);
         }
 
-        public static readonly BindableProperty BorderWidthProperty = BindableProperty.Create(nameof(BorderWidth), typeof(int), typeof(CustomEntry), Device.OnPlatform<int>(1, 2, 2));
+        public static readonly BindableProperty BorderWidthProperty = BindableProperty.Create(nameof(BorderWidth), typeof(int), typeof(CustomEntry)); 
         // Gets or sets BorderWidth value  
         public int BorderWidth
         {
