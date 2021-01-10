@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -10,15 +11,17 @@ namespace ChatApp_Ondoy
     {
         string _id { get; set; }
         public string id { get { return _id; } set { _id = value; OnPropertyChanged(nameof(id)); } }
-        string[] _ContactID { get; set; }
-        public string[] ContactID { get { return _ContactID; } set { _ContactID = value; OnPropertyChanged(nameof(ContactID)); } }
-        string[] _ContactEmail { get; set; }
-        public string[] ContactEmail { get { return _ContactEmail; } set { _ContactEmail = value; OnPropertyChanged(nameof(ContactEmail)); } }
+        string[] _contactID { get; set; }
+        public string[] contactID { get { return _contactID; } set { _contactID = value; OnPropertyChanged(nameof(contactID)); } }
+        string[] _contactEmail { get; set; }
+        public string[] contactEmail { get { return _contactEmail; } set { _contactEmail = value; OnPropertyChanged(nameof(contactEmail)); } }
 
-        string[] _ContactName { get; set; }
-        public string[] ContactName { get { return _ContactName; } set { _ContactName = value; OnPropertyChanged(nameof(ContactName)); } }
+        string[] _contactName { get; set; }
+        public string[] contactName { get { return _contactName; } set { _contactName = value; OnPropertyChanged(nameof(contactName)); } }
 
+        [JsonIgnore]
         DateTime _created_at { get; set; }
+        [JsonIgnore]
         public DateTime created_at { get { return _created_at; } set { _created_at = value; OnPropertyChanged(nameof(created_at)); } }
 
         public event PropertyChangedEventHandler PropertyChanged;

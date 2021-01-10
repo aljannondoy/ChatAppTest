@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj": {}
+    "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj": {
+    "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj",
         "projectName": "ChatApp-Ondoy.Android",
-        "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj",
+        "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\ChatApp-Ondoy.Android.csproj",
         "packagesPath": "C:\\Users\\Aljann Nino Ondoy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\obj\\",
+        "outputPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
-                "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
+              "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
+                "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
+    "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
+        "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
         "projectName": "ChatApp-Ondoy",
-        "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
+        "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
         "packagesPath": "C:\\Users\\Aljann Nino Ondoy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\obj\\",
+        "outputPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

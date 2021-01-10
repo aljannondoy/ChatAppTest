@@ -1636,11 +1636,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
       "projectName": "ChatApp-Ondoy.iOS",
-      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
+      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\ChatApp-Ondoy.iOS.csproj",
       "packagesPath": "C:\\Users\\Aljann Nino Ondoy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1661,8 +1661,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
-              "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
+            "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj": {
+              "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj"
             }
           }
         }

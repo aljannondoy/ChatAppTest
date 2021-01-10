@@ -56,6 +56,7 @@ namespace ChatApp_Ondoy
 
                         }
                     }
+                    contactsList.ItemsSource = contactList;
                     noCont.IsVisible = contactList.Count == 0;
                     contactsList.IsVisible = !(contactList.Count == 0);
                     loading.IsVisible = false;
@@ -112,14 +113,71 @@ namespace ChatApp_Ondoy
         }
         private async void AddContact(object sender, EventArgs e)
         {
-            ContactModel contact = new ContactModel()
-            {
-                id = IDGenerator.generateID(),
+            var result = new List<UserModel>();
+        
+            var documents = await CrossCloudFirestore.Current
+                                .Instance
+                                .GetCollection("users")
+                                .WhereEqualsTo("email",dataClass.loggedInUser.email)
+                                .WhereArrayContains("contacts", tempemail.uid)
+                                .GetDocumentsAsync();
 
-            };
-            if(dataClass.loggedInUser.email == tempemail.email)
+            foreach (var documentChange in documents.DocumentChanges)
             {
-                await DisplayAlert("Failed", "You cannot add yourself", "Okay");
+
+                var json = JsonConvert.SerializeObject(documentChange.Document.Data);
+                var obj = JsonConvert.DeserializeObject<UserModel>(json);
+                result.Add(obj);
+            }
+
+            if (dataClass.loggedInUser.email == tempemail.email)
+            {
+                await DisplayAlert("Failed", "You cannot add yourself.", "Okay");
+            }
+            else if (result.Count != 0)
+            {
+                await DisplayAlert("Failed", "You both already have a connection.", "Okay");
+            }
+            else
+            {
+                bool res = await DisplayAlert("Add Contact", "Would you like to add "+tempemail.name+"?", "Yes", "No");
+                if (res)
+                {
+                    ContactModel contact = new ContactModel()
+                    {
+                        id = IDGenerator.generateID(),
+                        contactID = new string[] { DataClass.GetInstance.loggedInUser.uid, tempemail.uid },
+                        contactEmail = new string[] { DataClass.GetInstance.loggedInUser.email, tempemail.email },
+                        contactName = new string[] { DataClass.GetInstance.loggedInUser.name, tempemail.name },
+                        created_at = DateTime.UtcNow
+
+                    };
+                    await CrossCloudFirestore.Current
+                        .Instance
+                        .GetCollection("contacts")
+                        .GetDocument(contact.id)
+                        .SetDataAsync(contact);
+                    if (dataClass.loggedInUser.contacts == null)
+                        dataClass.loggedInUser.contacts = new List<string>();
+                    dataClass.loggedInUser.contacts.Add(tempemail.uid);
+                    await CrossCloudFirestore.Current
+                        .Instance
+                        .GetCollection("users")
+                        .GetDocument(dataClass.loggedInUser.uid)
+                        .UpdateDataAsync(new { contacts = dataClass.loggedInUser.contacts });
+
+                    if (tempemail.contacts == null)
+                        tempemail.contacts = new List<string>();
+                    tempemail.contacts.Add(dataClass.loggedInUser.uid);
+                    await CrossCloudFirestore.Current
+                        .Instance
+                        .GetCollection("users")
+                        .GetDocument(tempemail.uid)
+                        .UpdateDataAsync(new { contacts = tempemail.contacts });
+
+                    await DisplayAlert("Success", "Contact added!", "Okay");
+                }
+              
             }
            
         }

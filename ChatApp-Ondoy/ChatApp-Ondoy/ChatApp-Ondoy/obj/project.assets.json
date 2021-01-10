@@ -441,6 +441,7 @@
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -964,11 +965,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
+      "projectUniqueName": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
       "projectName": "ChatApp-Ondoy",
-      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
+      "projectPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy.csproj",
       "packagesPath": "C:\\Users\\Aljann Nino Ondoy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\source\\repos\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\obj\\",
+      "outputPath": "C:\\Users\\Aljann Nino Ondoy\\Desktop\\test\\ChatAppTest\\ChatApp-Ondoy\\ChatApp-Ondoy\\ChatApp-Ondoy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
