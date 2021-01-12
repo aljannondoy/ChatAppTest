@@ -81,7 +81,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <ListView x:Name="contactsList" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill" ItemTapped="ContactsList_Tapped"
+                    <ListView x:Name="contactsList" BackgroundColor="Transparent" HorizontalOptions="Fill" VerticalOptions="Fill"
                       SeparatorVisibility="None" HasUnevenRows="true" Margin="5,5,5,0" IsVisible="False">
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -93,7 +93,10 @@
                                                     <Setter Property="BorderColor" Value="LightGreen"/>
                                                 </DataTrigger>
                                             </Frame.Triggers>
-                                            <Grid RowSpacing="0">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="Start_Conversation" NumberOfTapsRequired="1" BindingContext="{Binding contactID}"/>
+                                        </Frame.GestureRecognizers>
+                                        <Grid RowSpacing="0">
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="5*"/>
                                                     <RowDefinition Height="5*"/>

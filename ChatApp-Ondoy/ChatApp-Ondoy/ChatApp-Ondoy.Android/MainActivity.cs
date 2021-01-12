@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Firebase;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 
 namespace ChatApp_Ondoy.Droid
 {
@@ -19,6 +20,8 @@ namespace ChatApp_Ondoy.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            
+
             var density = Resources.DisplayMetrics.Density;
             App.screenWidth = Resources.DisplayMetrics.WidthPixels / density;
             App.screenHeight = Resources.DisplayMetrics.HeightPixels / density;
@@ -29,12 +32,14 @@ namespace ChatApp_Ondoy.Droid
             if (Xamarin.Forms.Device.Idiom == TargetIdiom.Tablet)
                 App.screenWidth = (9 * App.screenHeight) / 16;
 
+            
 
             base.OnCreate(savedInstanceState);
             FirebaseApp.InitializeApp(this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+           
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

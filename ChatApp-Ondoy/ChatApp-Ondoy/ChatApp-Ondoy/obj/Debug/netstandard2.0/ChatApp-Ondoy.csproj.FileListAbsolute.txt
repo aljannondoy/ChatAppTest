@@ -69,3 +69,8 @@ C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\
 C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ref\ChatApp-Ondoy.dll
 C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.pdb
 C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\Pages\ConversationPage.xaml.g.cs
+C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Aljann Nino Ondoy\Desktop\test\ChatAppTest\ChatApp-Ondoy\ChatApp-Ondoy\ChatApp-Ondoy\obj\Debug\netstandard2.0\ChatApp-Ondoy.csproj.CopyComplete

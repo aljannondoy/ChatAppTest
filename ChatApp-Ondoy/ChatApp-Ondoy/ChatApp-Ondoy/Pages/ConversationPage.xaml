@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ChatApp_Ondoy.ConversationPage"
+             xmlns:local="clr-namespace:ChatApp_Ondoy">
+    <ContentPage.Content>
+
+        
+        <Grid RowSpacing="0" ColumnSpacing="0" Padding="5,5,5,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+           
+
+            <Label x:Name="noCon" Text="You can now start a conversation with this person." Padding="10,1,10,10" Margin="0,90,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+                <Label Grid.Row="0" Grid.Column="0" x:Name="converse"
+                FontSize="Large" HorizontalTextAlignment="Start" Margin="8,0,0,0"/>
+                <AbsoluteLayout IsVisible="True">
+
+
+                    <Button Clicked="Button_Clicked" BackgroundColor="LightGray" WidthRequest="28" HeightRequest="25" ImageSource="CloseIcon.png" AbsoluteLayout.LayoutBounds="1, 0, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                </AbsoluteLayout>
+               
+                <ListView HorizontalOptions="Fill" VerticalOptions="Start" HasUnevenRows="True" x:Name="conversationListview" IsVisible="False" SeparatorVisibility="None" Margin="5,50,5,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ContentView>
+                                    <StackLayout BackgroundColor="LightBlue" Margin="5,5,30,5" HorizontalOptions="Start">
+                                        <StackLayout.Triggers>
+                                            <DataTrigger TargetType="StackLayout" Binding="{Binding ., Converter={StaticResource isViewerConverter}}" Value="True">
+                                                <Setter Property="BackgroundColor" Value="LightGreen"/>
+                                                <Setter Property="HorizontalOptions" Value="End"/>
+                                                <Setter Property="Margin" Value="30,5,5,5"/>
+                                            </DataTrigger>
+                                        </StackLayout.Triggers>
+                                        <Label Text="{Binding message}" Margin="5,5,5,5" HorizontalOptions="Start" HorizontalTextAlignment="Start" VerticalTextAlignment="End" FontSize="Body"/>
+
+                                    </StackLayout>
+                                </ContentView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+       
+            <Grid Grid.Row="2" Grid.Column="0" ColumnSpacing="5" BackgroundColor="LightGray" Padding="5,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+
+                <Editor x:Name="editor" Grid.Row="0" Grid.Column="0" Placeholder="Write your message here..." MaxLength="240" AutoSize="TextChanges" BackgroundColor="White"/>
+                <Button Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Text="Send" BackgroundColor="LightGray" HorizontalOptions="EndAndExpand" HeightRequest="35" WidthRequest="60" Clicked="Send_Message"/>
+
+
+            </Grid>
+            <local:Loading Grid.Row="0" Grid.Column="0" x:Name="loading" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" IsVisible="False"/>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

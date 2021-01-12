@@ -15,6 +15,7 @@ namespace ChatApp_Ondoy
     {
         DataClass dataClass = DataClass.GetInstance;
         UserModel tempemail = new UserModel();
+        string temp;
 
         public ChatPage()
         {
@@ -109,7 +110,8 @@ namespace ChatApp_Ondoy
         }
         private void Close_Clicked(object sender, EventArgs e)
         {
-           Application.Current.MainPage = new TabPage();
+          
+            Application.Current.MainPage = new TabPage();
         }
         private async void AddContact(object sender, EventArgs e)
         {
@@ -175,14 +177,78 @@ namespace ChatApp_Ondoy
                         .GetDocument(tempemail.uid)
                         .UpdateDataAsync(new { contacts = tempemail.contacts });
 
+                    await Navigation.PushModalAsync(new TabPage());
                     await DisplayAlert("Success", "Contact added!", "Okay");
+                    
                 }
               
             }
            
         }
-        private void ContactsList_Tapped(object sender, EventArgs e)
+        private async void Start_Conversation(object sender, EventArgs e)
         {
+            var t = (Frame)sender;
+            var cont = (ContactModel)t.BindingContext;
+            var frame = cont.id;
+            var result = new List<ConversationModel>();
+            loading.IsVisible = true;
+            var documents = await CrossCloudFirestore.Current
+                                .Instance
+                                .GetCollection("contacts")
+                                .WhereEqualsTo("id", frame.ToString())
+                                .GetDocumentsAsync();
+
+            foreach (var documentChange in documents.DocumentChanges)
+            {
+
+                var json = JsonConvert.SerializeObject(documentChange.Document.Data);
+                var obj = JsonConvert.DeserializeObject<ContactModel>(json);
+                if(obj.contactEmail[0].ToString() == dataClass.loggedInUser.email.ToString())
+                {
+                    temp = obj.contactEmail[1].ToString();
+                }
+                else
+                {
+                    temp = obj.contactEmail[0].ToString();
+                }
+                  
+            }
+            var documents2 = await CrossCloudFirestore.Current
+                               .Instance
+                               .GetCollection("users")
+                               .WhereEqualsTo("email", temp)
+                               .GetDocumentsAsync();
+            foreach (var documentChange in documents2.DocumentChanges)
+            {
+
+                var json = JsonConvert.SerializeObject(documentChange.Document.Data);
+                var obj = JsonConvert.DeserializeObject<UserModel>(json);
+                tempemail = obj;
+
+            }
+
+            var documents3 = await CrossCloudFirestore.Current
+                                .Instance
+                                .GetCollection("contacts")
+                                .GetDocument(cont.id)
+                                .GetCollection("conversations")
+                                .OrderBy("created_at", false)
+                                .GetDocumentsAsync();
+
+            foreach (var documentChange in documents3.DocumentChanges)
+            {
+
+                var json = JsonConvert.SerializeObject(documentChange.Document.Data);
+                var obj = JsonConvert.DeserializeObject<ConversationModel>(json);
+
+                result.Add(obj);
+
+
+            }
+
+            loading.IsVisible = false;
+            await Navigation.PushModalAsync(new ConversationPage(tempemail, cont, result));
+            
 
         }
         public void Clear_Clicked(object sender, EventArgs e)

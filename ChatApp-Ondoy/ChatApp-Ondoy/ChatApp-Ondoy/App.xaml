@@ -10,7 +10,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <local:IsOwnerConverter x:Key="isOwnerConverter"/>
-            
+            <local:IsViewerConverter x:Key="isViewerConverter"/>
             <local:ScaleXAML x:Key="scale"/>
         </ResourceDictionary>
 
